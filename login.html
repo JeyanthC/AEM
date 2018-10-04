@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>Login page</title>
+    <link rel="stylesheet" href="logincolor.css">
+
+</head>
+<style>
+    body {
+        background-color: Black;
+    }
+</style>
+
+<body>
+    <h1>Login Page</h1>
+    <form name="login">
+        <br> Username<input type="text" name="userid" />
+        <br/> Password
+
+
+        <input type="password" name="pswrd" />
+        <pre>
+            
+            <input type="button" onclick="check(this.form)" value="Login"/> <input type="reset" value="Cancel"/>
+        
+        </pre>
+    </form>
+    <script language="javascript">
+        function check(form) { /*function to check userid & password*/
+            /*the following code checkes whether the entered userid and password are matching*/
+            if (form.userid.value == "abc" && form.pswrd.value == "abc123") {
+                window.open('bill.html') /*opens the target page while Id & password matches*/
+            } else {
+                alert("Error Password or Username") /*displays error message*/
+            }
+        }
+    </script>
+</body>
+
+</html>
