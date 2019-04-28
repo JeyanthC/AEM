@@ -1,3 +1,3 @@
 # Automatic Energy Meter
 
-This project is currently in progress
+Uses a Raspberry Pi to count the number of electrical units used by a household.
